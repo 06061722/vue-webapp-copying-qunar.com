@@ -7,6 +7,7 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('_c', resolve('src/components'))
+      .set('_s', resolve('src/assets/style'))
   },
   productionSourceMap: false,
   devServer: {
