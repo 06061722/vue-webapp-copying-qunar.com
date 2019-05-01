@@ -33,15 +33,16 @@ export default {
 <style lang="stylus" scoped>
 .swiper {
   overflow: hidden;
-  height: 172px;
+  height: 171.6px;
   position: relative;
 
   .swiper-content {
+    height 100%
     width: 1875px;
 
     img {
       width: 375px;
-      height: 170px;
+      height: 100%;
     }
   }
 
