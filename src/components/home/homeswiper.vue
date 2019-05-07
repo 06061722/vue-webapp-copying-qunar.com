@@ -1,5 +1,5 @@
 <template>
-  <swiper class="swiper" :scrollX="scrollX" @scrollEnd="scrollEnd">
+  <swiper class="swiper" :scrollX="true" :loop="true" @scrollEnd="scrollEnd">
     <div class="swiper-content">
       <img src="https://dimg04.c-ctrip.com/images/zg0s13000000udr6jAC7F.png" alt>
       <img src="https://dimg04.c-ctrip.com/images/zg0l13000000uf4qtAB08.png" alt>
@@ -19,7 +19,6 @@ export default {
   },
   data () {
     return {
-      scrollX: true,
       currentPage: 0
     }
   },

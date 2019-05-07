@@ -12,7 +12,11 @@ export default {
   props: {
     scrollX: {
       type: Boolean,
-      default: true
+      default: false
+    },
+    loop: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -25,7 +29,7 @@ export default {
       this.scroll = new BetterScroll(this.$refs.wrapper, {
         scrollX: this.scrollX,
         snap: {
-          loop: true,
+          loop: this.loop,
           threshold: 0.3,
           easing: {
             style: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
