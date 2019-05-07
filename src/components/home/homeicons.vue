@@ -10,7 +10,7 @@
     </div>
     <div class="icon">
       <img class="icon-img" src="http://pages.c-ctrip.com/dm/20180822_icon/hotel1.png" alt>
-      <p>热门景点5</p>
+      <p>热门景点22323123215</p>
     </div>
     <div class="icon">
       <img class="icon-img" src="http://pages.c-ctrip.com/dm/20180822_icon/hotel1.png" alt>
@@ -45,6 +45,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import '~@/assets/style/mixins'
 .icons {
   // overflow hidden
   padding-bottom: 50%;
@@ -54,6 +55,7 @@ export default {
     float: left;
     background: #eee
     text-align center
+    ellipsis()
     .icon-img {
       height: 75%;
       width: 75%;
