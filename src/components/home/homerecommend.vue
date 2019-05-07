@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item" v-for="item in recommandList" :key="item.id">
+      <li class="item" v-for="(item, index) in recommandList" :key="index">
         <div>
           <img class="item-img" :src="item.imgUrl" alt>
         </div>
@@ -70,7 +70,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-@import '~@/assets/style/mixins';
+@import '~_s/mixins';
 
 .title {
   line-height: 40px;

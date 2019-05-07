@@ -11,7 +11,7 @@
       </svg>
       <span>输入城市/景点/游玩主题</span>
     </div>
-    <div class="header-right">
+    <div class="header-right" @click="GoCityPage">
       <span>城市</span>
       <svg class="icon icon-right" aria-hidden="true">
         <use xlink:href="#icon-jiantouxia"></use>
@@ -26,13 +26,17 @@ export default {
     return {
     }
   },
-  methods: {}
+  methods: {
+    GoCityPage () {
+      this.$router.push('/city')
+    }
+  }
 }
 </script>
 <style lang="stylus" scoped>
 @import '~_s/varibles'
 .header {
-  line-height: 43px;
+  line-height: $headerHeight;
   display: flex;
   background: $bgColor;
   color: #fff;
